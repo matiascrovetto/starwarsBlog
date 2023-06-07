@@ -24,12 +24,12 @@ function Planets (props) {
         <p className="card-text my-0">Population: {props?.population}</p>
         <p className="card-text my-0">Terrain: {props?.terrain}</p>
         <div className="d-flex justify-content-between mt-4">
-        <Link to={`/planets/${props?.uid}`} className="btn btn-outline-warning">
+        <Link to={`/planets/${props?.uid}`} className="btn btn-outline-light">
             Learn More!
           </Link>
           <button
             type="button"
-            className="btn btn-danger"
+            className="btn btn-warning"
             disabled={store.favorites.includes(props.name)}
             onClick={handleAddFavorite}
           >

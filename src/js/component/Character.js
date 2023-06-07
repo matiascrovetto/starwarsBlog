@@ -25,12 +25,12 @@ const Character = (props) => {
         <p className="card-text my-0">Hair color: {props?.hair_color}</p>
         <p className="card-text my-0">Gender: {props?.gender}</p>
         <div className="d-flex justify-content-between mt-4">
-          <Link to={`/characters/${props?.uid}`} className="btn btn-outline-warning">
+          <Link to={`/characters/${props?.uid}`} className="btn btn-outline-light">
             Learn More!
           </Link>
           <button
             type="button"
-            className="btn btn-danger"
+            className="btn btn-warning"
             disabled={store.favorites.includes(props.name)}
             onClick={handleAddFavorite}
           >
